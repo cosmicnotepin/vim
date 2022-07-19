@@ -6,7 +6,7 @@ sudo apt install vim-gtk3
 sudo apt install silversearcher-ag
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 mv $SCRIPT_DIR/.vimrc ~
-rm $SCRIPT_DIR/setup_vim_beautiftully.sh
+rm $SCRIPT_DIR/setup_vim_beautifully.sh
 if [ -z "$(ls -A $SCRIPT_DIR)" ]; then
     rm -r $SCRIPT_DIR
 fi
