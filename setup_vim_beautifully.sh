@@ -7,8 +7,11 @@ sudo apt install silversearcher-ag
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 mv $SCRIPT_DIR/.vimrc ~
 rm $SCRIPT_DIR/setup_vim_beautifully.sh
+rm -r $SCRIPT_DIR/.git
 if [ -z "$(ls -A $SCRIPT_DIR)" ]; then
     rm -r $SCRIPT_DIR
+else
+    echo Do not put trash in my folder and expect me to clean it up.
 fi
 mkdir -p ~/.vim/backup
 mkdir -p ~/.vim/undo
