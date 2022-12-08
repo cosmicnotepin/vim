@@ -27,3 +27,4 @@ git clone https://github.com/junegunn/fzf.git
 git clone https://github.com/junegunn/fzf.vim.git
 git clone https://github.com/dmerejkowsky/vim-ale.git
 git clone https://github.com/mileszs/ack.vim.git
+git clone https://github.com/vimwiki/vimwiki.git
