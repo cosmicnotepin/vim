@@ -169,6 +169,7 @@ nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <leader>m :MundoToggle<CR>
 nnoremap <leader>l oconsole.log('<ESC>pa')<ESC>oconsole.log(<ESC>pa)<ESC>
 nnoremap <leader>p oprint(f'<ESC>pa: {<ESC>pa}')<ESC>
+nnoremap <leader>c ostd::cout<<"<ESC>pa: "<<<ESC>pa<<'\n';<ESC>
 nnoremap <leader>q :cclose<CR>
 cnoremap fpwd let @+ = expand("%:p")<CR>
 cnoremap svnd VCSDiff
