@@ -164,6 +164,7 @@ cmap w!! %!sudo tee > /dev/null %
 "close all but current buffer
 command! BufOnly silent! execute "%bd|e#|bd#"
 let mapleader =","
+nnoremap <leader>o :BufOnly<CR>
 nnoremap <leader>f :FZF<CR>
 nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <leader>m :MundoToggle<CR>
