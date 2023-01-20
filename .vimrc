@@ -96,7 +96,7 @@ endif " has("autocmd")
 command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
 	 	\ | wincmd p | diffthis
 "Ale config
-let g:ale_c_gcc_options = '-std=gnu11 -Wall'
+let g:ale_cpp_cc_options = '-std=c++20 -Wall'
 
 let g:ale_linters = {
 \   'javascript': ['eslint'],
