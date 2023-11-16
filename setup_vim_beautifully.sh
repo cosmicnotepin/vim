@@ -4,6 +4,7 @@ echo It will move the .vimrc to ~
 echo Then it will remove itself and the containting folder
 sudo apt install vim-gtk3
 sudo apt install silversearcher-ag
+sudo apt install graphviz # graphviz is needed for plantuml stuff
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 mv $SCRIPT_DIR/.vimrc ~
 rm $SCRIPT_DIR/setup_vim_beautifully.sh
@@ -28,3 +29,6 @@ git clone https://github.com/junegunn/fzf.vim.git
 git clone https://github.com/dmerejkowsky/vim-ale.git
 git clone https://github.com/mileszs/ack.vim.git
 git clone https://github.com/vimwiki/vimwiki.git
+git clone https://github.com/weirongxu/plantuml-previewer.vim.git
+git clone https://github.com/tyru/open-browser.vim.git #needed for plantuml-previewer
+git clone https://github.com/aklt/plantuml-syntax.git
