@@ -102,6 +102,7 @@ let g:ale_linters = {
 \   'javascript': ['eslint'],
 \   'jsx': ['eslint'],
 \   'python': ['flake8'],
+\   'cpp': ['cc', 'cpplint'],
 \ }
 "let g:ale_python_pylint_options = '-E'
 
@@ -130,7 +131,10 @@ let g:ale_sign_warning = '⚠'
 hi ALEWarningSign ctermfg=222 ctermbg=236
 let g:bufferline_fname_mod = ':~:.'
 
+"vim-buftabline
 let g:buftabline_numbers = 1
+hi link BuftabLineHidden ToolbarButton
+hi link BuftabLineActive ToolbarButton
 
 ""
 
