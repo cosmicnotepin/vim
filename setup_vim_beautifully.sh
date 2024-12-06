@@ -32,3 +32,4 @@ git clone https://github.com/vimwiki/vimwiki.git
 git clone https://github.com/weirongxu/plantuml-previewer.vim.git
 git clone https://github.com/tyru/open-browser.vim.git #needed for plantuml-previewer
 git clone https://github.com/aklt/plantuml-syntax.git
+git clone https://github.com/rust-lang/rust.vim

@@ -101,14 +101,18 @@ let g:ale_cpp_cc_options = '-std=c++20 -Wall'
 let g:ale_linters = {
 \   'javascript': ['eslint'],
 \   'jsx': ['eslint'],
-\   'python': ['flake8'],
-\   'cpp': ['cc', 'cpplint'],
+\   'cpp': [],
+\   'python': [],
+\   'rust': ['analyzer'],
 \ }
 "let g:ale_python_pylint_options = '-E'
+"\   'cpp': ['cc', 'cpplint'],
 
 let g:ale_fixers = {
 \   'javascript': ['prettier', 'eslint'],
-\   'json': ['prettier']
+\   'json': ['prettier'],
+\   'rust': ['rustfmt', 'trim_whitespace', 'remove_trailing_lines'], 
+\   'python': ['autopep8', 'reorder-python-imports'],
 \ }
 "\   'python': ['autopep8', 'reorder-python-imports'],
 
@@ -173,7 +177,8 @@ nnoremap <leader>f :FZF<CR>
 nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <leader>m :MundoToggle<CR>
 nnoremap <leader>l oconsole.log('<ESC>pa')<ESC>oconsole.log(<ESC>pa)<ESC>
-nnoremap <leader>p oprint(f'<ESC>pa: {<ESC>pa}')<ESC>
+nnoremap <leader>p oprint(f"<ESC>pa: {<ESC>pa}")<ESC>
+nnoremap <leader>r oprintln!("<ESC>pa: {:?}", <ESC>pa);<ESC>
 nnoremap <leader>c ostd::cout << "<ESC>pa: " << <ESC>pa << '\n';<ESC>
 nnoremap <leader>q :cclose<CR>
 cnoremap fpwd let @+ = expand("%:p")<CR>
@@ -207,3 +212,4 @@ endif
 let g:vimtex_view_general_viewer= 'sumatraPDF'
 let g:vimtex_view_general_options = '-reuse-instance @pdf'
 let g:vimtex_view_general_options_latexmk = '-reuse-instance'
+
