@@ -26,7 +26,7 @@ git clone https://github.com/ap/vim-buftabline.git
 git clone https://github.com/preservim/nerdtree.git
 git clone https://github.com/junegunn/fzf.git
 git clone https://github.com/junegunn/fzf.vim.git
-git clone https://github.com/dmerejkowsky/vim-ale.git
+git clone https://github.com/dense-analysis/ale.git
 git clone https://github.com/mileszs/ack.vim.git
 git clone https://github.com/vimwiki/vimwiki.git
 git clone https://github.com/weirongxu/plantuml-previewer.vim.git
